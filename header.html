@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agapi - About Us & Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="image logo.jpeg" alt="Agapi Logo" class="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-us" id="about">
+        <h2>About Agapi</h2>
+        <p>
+            Welcome to Agapi, your trusted platform for counseling and mental well-being. At Agapi, we believe in the power of compassion and understanding. Our mission is to provide accessible and professional counseling services that cater to your individual needs. Whether you're facing life challenges, seeking guidance, or simply need a listening ear, Agapi is here for you.
+        </p>
+        <p>
+            We connect clients with certified counselors who specialize in various fields of therapy, ensuring you receive the care and support that’s right for you. Together, let’s journey towards mental well-being and emotional balance.
+        </p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us" id="contact">
+        <h2>Contact Us</h2>
+        <form action="/send-message" method="POST" class="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+<script src=script.js></script>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Agapi. All Rights Reserved.</p>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

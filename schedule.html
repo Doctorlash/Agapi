@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agapi - Schedule Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header (Reuse existing header from previous code) -->
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="image logo.jpeg" alt="Agapi Logo" class="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="header.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Schedule Appointment Section -->
+    <section class="schedule-section">
+        <h2>Schedule an Appointment</h2>
+        <p>Select a therapist, a date, and a time for your appointment.</p>
+
+        <form id="scheduleForm" class="schedule-form">
+            <label for="clientName">Your Name:</label>
+            <input type="text" id="clientName" name="clientName" placeholder="Enter your name" required>
+        
+            <label for="clientEmail">Your Email:</label>
+            <input type="email" id="clientEmail" name="clientEmail" placeholder="Enter your email" required>
+        
+            <label for="therapist">Select Therapist:</label>
+            <select id="therapist" name="therapist" required>
+                <option value="">--Choose Therapist--</option>
+                <option value="Dr. Jane Smith">Dr. Jane Smith</option>
+                <option value="Dr. John Doe">Dr. John Doe</option>
+                <option value="Dr. Emily Stone">Dr. Emily Stone</option>
+            </select>
+        
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+        
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time" required>
+        
+            <button type="submit">Schedule Appointment</button>
+        </form>
+        
+        <div id="confirmationMessage" class="confirmation-message"></div>
+        
+
+    <!-- Footer (Reuse existing footer) -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Agapi. All Rights Reserved.</p>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>

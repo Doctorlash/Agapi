@@ -1,0 +1,20 @@
+{
+  "name": "agapi",
+  "version": "1.0.0",
+  "description": "This is a counseling app that connects clients to their therapist from the comfort of their homes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.3",
+    "nodemailer": "^6.9.15"
+  }
+}
